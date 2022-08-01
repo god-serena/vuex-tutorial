@@ -1,7 +1,10 @@
+//This index.js serves as an entry point to our Vuex
 import Vue from 'vue'
 import Vuex from 'vuex'
+import todos from './modules/todos';
 
-Vue.use(Vuex)
+//Load Vuex
+Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
@@ -13,5 +16,6 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
+    todos,
   }
 })
